@@ -1,19 +1,12 @@
 <script setup lang="ts">
+import CountryList from './components/CountryList.vue';
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
   <main>
-    <TheWelcome />
+    <CountryList />
   </main>
 </template>
 
@@ -33,7 +26,13 @@ header {
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
   }
-
+  main {
+    display: flex;
+    place-items: center;
+    place-content: center;
+    height: 100vh;
+    width: 100vw;
+  }
   .logo {
     margin: 0 2rem 0 0;
   }
